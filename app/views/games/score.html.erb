@@ -1,0 +1,15 @@
+<h1>Result</h1>
+
+<% if @included %>
+  <% if @check %>
+    <%= "Congratulations #{@word} is an English word!" %>
+  <% else %>
+    <%= "Sorry #{@word} is not an English word!" %>
+  <% end %>
+<% else %>
+  <%= "Sorry #{@word} can not be made of #{@letters}" %>
+<% end %>
+
+<%= link_to 'Play again', '/new'%>
+
+
